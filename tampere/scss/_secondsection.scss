@@ -1,0 +1,28 @@
+.second-section {
+    background-color: $helper_color;
+    img {
+        max-width: 300px;
+        max-height: 250px;
+        padding: 10px;
+    }
+    .box {
+        position: relative;
+        display: inline-block;
+        .text {
+            background-color: $secondary_color;
+            position: absolute;
+            z-index: 999;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            top: 80%;
+            /* Adjust this value to move the positioned div up and down */
+            text-align: center;
+            width: 85%;
+            /* Set the width of the positioned div */
+            h4 {
+                color: $white_color;
+            }
+        }
+    }
+}
