@@ -1,12 +1,13 @@
 .second-section {
     img {
-        max-width: 300px;
-        max-height: 250px;
-        padding: 10px;
+        max-width: 400px;
+        max-height: 200px;
+        padding-top: 10px;
     }
     .box {
         position: relative;
         display: inline-block;
+        justify-content: center;
         .text {
             background-color: $secondary_color;
             position: absolute;
@@ -17,7 +18,7 @@
             top: 80%;
             /* Adjust this value to move the positioned div up and down */
             text-align: center;
-            width: 85%;
+            width: 250px;
             /* Set the width of the positioned div */
             h4 {
                 color: $white_color;

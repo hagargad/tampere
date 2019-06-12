@@ -3,7 +3,6 @@
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 .top .navbar {
-  width: 94%;
   font-size: 16px;
   text-align: center; }
   .top .navbar .navbar-nav a {
@@ -14,10 +13,10 @@
 header {
   height: auto; }
   header .logo {
-    max-width: 500px;
-    max-height: 250px; }
+    margin-top: 20px;
+    max-width: 600px;
+    max-height: 350px; }
   header .header-list ul {
-    margin-top: 50px;
     float: right;
     list-style-type: none;
     color: #fff;
@@ -32,12 +31,13 @@ header {
   background-size: cover; }
 
 .second-section img {
-  max-width: 300px;
-  max-height: 250px;
-  padding: 10px; }
+  max-width: 400px;
+  max-height: 200px;
+  padding-top: 10px; }
 .second-section .box {
   position: relative;
-  display: inline-block; }
+  display: inline-block;
+  justify-content: center; }
   .second-section .box .text {
     background-color: #3f2889;
     position: absolute;
@@ -48,16 +48,31 @@ header {
     top: 80%;
     /* Adjust this value to move the positioned div up and down */
     text-align: center;
-    width: 85%;
+    width: 250px;
     /* Set the width of the positioned div */ }
     .second-section .box .text h4 {
       color: #fff; }
 
-.third h3 {
+.third h2 {
   color: #4e018f; }
 .third .about {
   padding: 20px;
   background-color: #5c63b0;
   color: #fff; }
+  .third .about h2 {
+    color: #fff; }
+  .third .about p {
+    font-size: 14px; }
+
+.fourth h2 {
+  color: #4e018f; }
+.fourth .program {
+  padding: 20px;
+  background-color: #5c63b0;
+  color: #fff; }
+  .fourth .program h2 {
+    color: #fff; }
+  .fourth .program p {
+    font-size: 14px; }
 
 /*# sourceMappingURL=style.css.map */
