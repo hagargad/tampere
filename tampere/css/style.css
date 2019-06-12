@@ -23,6 +23,7 @@ header {
     font-size: 12px;
     display: inline-flex; }
     header .header-list ul li a {
+      color: #fff;
       padding-right: 20px; }
 
 #back {
@@ -74,5 +75,42 @@ header {
     color: #fff; }
   .fourth .program p {
     font-size: 14px; }
+
+.fifth h2 {
+  color: #4e018f; }
+.fifth .elig {
+  padding: 20px;
+  background-color: #5c63b0;
+  color: #fff; }
+  .fifth .elig h2 {
+    color: #fff; }
+  .fifth .elig p {
+    font-size: 14px; }
+
+.sixth h2 {
+  color: #4e018f; }
+.sixth .who {
+  padding: 20px;
+  background-color: #5c63b0;
+  color: #fff; }
+  .sixth .who p {
+    font-size: 14px;
+    color: #fff; }
+  .sixth .who ul li {
+    font-size: 14px;
+    color: #fff; }
+
+.seventh h2 {
+  color: #4e018f; }
+.seventh .addmission {
+  padding: 20px;
+  background-color: #5c63b0;
+  color: #fff; }
+  .seventh .addmission h2 {
+    color: #fff; }
+  .seventh .addmission p {
+    font-size: 14px; }
+  .seventh .addmission a {
+    color: yellow; }
 
 /*# sourceMappingURL=style.css.map */

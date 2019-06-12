@@ -9,11 +9,12 @@ header {
         ul {
             float: right;
             list-style-type: none;
-            color: #fff;
+            color: $white_color;
             font-size: 12px;
             display: inline-flex;
             li {
                 a {
+                    color: $white_color;
                     padding-right: 20px;
                 }
             }

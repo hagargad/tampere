@@ -1,0 +1,19 @@
+.seventh {
+    h2 {
+        color: $main_color;
+    }
+    .addmission {
+        padding: 20px;
+        background-color: #5c63b0;
+        color: $white_color;
+        h2 {
+            color: $white_color;
+        }
+        p {
+            font-size: 14px;
+        }
+        a {
+            color: yellow;
+        }
+    }
+}
