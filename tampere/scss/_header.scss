@@ -1,9 +1,8 @@
 header {
-    background-color: #4e018f;
     height: auto;
     .logo {
-        max-width: 200px;
-        max-height: 100px;
+        max-width: 500px;
+        max-height: 250px;
     }
     .header-list {
         ul {
@@ -20,4 +19,10 @@ header {
             }
         }
     }
+}
+
+#back {
+    background-image: url(../images/back.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
