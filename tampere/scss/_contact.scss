@@ -1,0 +1,20 @@
+.contact {
+    background-color: $secondary_color;
+    padding: 10px;
+    h2 {
+        text-align: center;
+        color: $white_color;
+    }
+    p {
+        font-size: 20px;
+        color: $white_color;
+        .fa {
+            text-align: center;
+            font-size: 60px;
+            color: $white_color;
+        }
+    }
+    a {
+        color: $white_color;
+    }
+}

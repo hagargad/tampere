@@ -1,0 +1,14 @@
+.feedback {
+    h2 {
+        color: $main_color;
+    }
+    .form-group {
+        input {
+            width: 400px;
+        }
+        .btn-main {
+            color: $white_color;
+            background-color: $main_color;
+        }
+    }
+}
