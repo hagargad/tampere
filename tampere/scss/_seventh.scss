@@ -1,6 +1,12 @@
 .seventh {
     h2 {
         color: $main_color;
+        @include nanoSmall {
+            font-size: 20px;
+        }
+        @include extraSmall {
+            font-size: 20px;
+        }
     }
     .addmission {
         padding: 20px;

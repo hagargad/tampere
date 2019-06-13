@@ -1,7 +1,8 @@
 .team {
     img {
-        width: 500px;
-        height: 300px;
+        // width: 500px;
+        // height: 300px;
+        max-width: 100%;
     }
     .title {
         color: $main_color;
@@ -13,12 +14,18 @@
         text-align: center;
         h1 {
             font-size: 65px;
+            @include nanoSmall {
+                font-size: 40px;
+            }
+            @include extraSmall {
+                font-size: 30px;
+            }
         }
         h4 {
             font-size: 35px;
         }
         h2 {
-            font-size: 50px;
+            font-size: 30px;
         }
     }
 }

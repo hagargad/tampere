@@ -4,8 +4,10 @@
 
 
 $(window).load(function() {
-    $('#pageloader').delay(1000).fadeOut('slow');
+    $(".loader-item").delay(500).fadeOut();
+    $("#pageloader").delay(1000).fadeOut("slow");
 });
+
 /*------------------------------*/
 /* Smooth scroll
 /*------------------------------*/

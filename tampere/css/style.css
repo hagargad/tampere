@@ -3,11 +3,24 @@
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 .top img {
-  max-width: 100%;
-  max-height: 80%;
-  opacity: 0.7;
+  width: 100%;
   background-color: rgba(78, 1, 143, 0.7);
   background: linear-gradient(rgba(78, 1, 143, 0.7)); }
+  @media only screen and (max-width: 320px) {
+    .top img {
+      width: 80%; } }
+  @media only screen and (max-width: 576px) {
+    .top img {
+      width: 70%; } }
+  @media only screen and (max-width: 768px) {
+    .top img {
+      width: 60%; } }
+  @media only screen and (max-width: 992px) {
+    .top img {
+      width: 100%; } }
+  @media only screen and (max-width: 1200px) {
+    .top img {
+      width: 100%; } }
 .top .box {
   position: relative;
   display: inline-block;
@@ -25,6 +38,12 @@
     /* Set the width of the positioned div */ }
     .top .box .text h2 {
       color: #fff; }
+      @media only screen and (max-width: 320px) {
+        .top .box .text h2 {
+          font-size: 40%; } }
+      @media only screen and (max-width: 576px) {
+        .top .box .text h2 {
+          font-size: 45%; } }
 .top .navbar {
   font-size: 16px;
   text-align: center; }
@@ -32,26 +51,6 @@
     color: #4e018f;
     text-align: center;
     padding-right: 20px; }
-
-#overlay {
-  position: absolute;
-  /* Sit on top of the page content */
-  display: none;
-  /* Hidden by default */
-  width: 100%;
-  /* Full width (cover the whole page) */
-  height: 100%;
-  /* Full height (cover the whole page) */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(78, 1, 143, 0.7);
-  /* Black background with opacity */
-  z-index: 2;
-  /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer;
-  /* Add a pointer on hover */ }
 
 header {
   height: auto; }
@@ -75,10 +74,62 @@ header {
   background-size: cover;
   z-index: -999999; }
 
+#pageloader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #FFF;
+  z-index: 999999; }
+
+.loader {
+  position: absolute;
+  width: auto;
+  height: auto;
+  margin: -20px 0 0 -20px;
+  top: 50%;
+  left: 50%;
+  text-align: center; }
+
+.scrollup {
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  bottom: 30px;
+  right: 15px;
+  display: none;
+  background-color: #000;
+  text-align: center;
+  z-index: 200; }
+  .scrollup i {
+    color: #fff;
+    font-size: 15px;
+    display: block;
+    line-height: 33px; }
+  .scrollup :hover {
+    background: rgba(139, 164, 189, 0.6); }
+
 .second-section img {
-  max-width: 400px;
-  max-height: 200px;
+  max-width: 100%;
+  max-height: 100%;
   padding-top: 10px; }
+  @media only screen and (max-width: 320px) {
+    .second-section img {
+      width: 70%; } }
+  @media only screen and (max-width: 576px) {
+    .second-section img {
+      width: 70%; } }
+  @media only screen and (max-width: 768px) {
+    .second-section img {
+      width: 60%; } }
+  @media only screen and (max-width: 992px) {
+    .second-section img {
+      width: -webkit-fill-available; } }
+  @media only screen and (max-width: 1200px) {
+    .second-section img {
+      width: -webkit-fill-available; } }
+  @media only screen and (min-width: 1200px) {
+    .second-section img {
+      width: -webkit-fill-available; } }
 .second-section .box {
   position: relative;
   display: inline-block;
@@ -95,11 +146,24 @@ header {
     text-align: center;
     width: 80%;
     /* Set the width of the positioned div */ }
+    @media only screen and (max-width: 992px) {
+      .second-section .box .text {
+        width: 60%; } }
     .second-section .box .text h4 {
+      font-size: 20px;
       color: #fff; }
+      @media only screen and (max-width: 768px) {
+        .second-section .box .text h4 {
+          font-size: 16px; } }
 
 .third h2 {
   color: #4e018f; }
+  @media only screen and (max-width: 320px) {
+    .third h2 {
+      font-size: 20px; } }
+  @media only screen and (max-width: 576px) {
+    .third h2 {
+      font-size: 20px; } }
 .third .about {
   padding: 20px;
   background-color: #5c63b0;
@@ -111,17 +175,36 @@ header {
 
 .fourth h2 {
   color: #4e018f; }
-.fourth .program {
+  @media only screen and (max-width: 320px) {
+    .fourth h2 {
+      font-size: 20px; } }
+  @media only screen and (max-width: 576px) {
+    .fourth h2 {
+      font-size: 20px; } }
+
+.program {
   padding: 20px;
   background-color: #5c63b0;
   color: #fff; }
-  .fourth .program h2 {
+  .program h2 {
     color: #fff; }
-  .fourth .program p {
+    @media only screen and (max-width: 320px) {
+      .program h2 {
+        font-size: 20px; } }
+    @media only screen and (max-width: 576px) {
+      .program h2 {
+        font-size: 20px; } }
+  .program p {
     font-size: 14px; }
 
 .fifth h2 {
   color: #4e018f; }
+  @media only screen and (max-width: 320px) {
+    .fifth h2 {
+      font-size: 20px; } }
+  @media only screen and (max-width: 576px) {
+    .fifth h2 {
+      font-size: 20px; } }
 .fifth .elig {
   padding: 20px;
   background-color: #5c63b0;
@@ -133,19 +216,32 @@ header {
 
 .sixth h2 {
   color: #4e018f; }
-.sixth .who {
+  @media only screen and (max-width: 320px) {
+    .sixth h2 {
+      font-size: 20px; } }
+  @media only screen and (max-width: 576px) {
+    .sixth h2 {
+      font-size: 20px; } }
+
+.who {
   padding: 20px;
   background-color: #5c63b0;
   color: #fff; }
-  .sixth .who p {
+  .who p {
     font-size: 14px;
     color: #fff; }
-  .sixth .who ul li {
+  .who ul li {
     font-size: 14px;
     color: #fff; }
 
 .seventh h2 {
   color: #4e018f; }
+  @media only screen and (max-width: 320px) {
+    .seventh h2 {
+      font-size: 20px; } }
+  @media only screen and (max-width: 576px) {
+    .seventh h2 {
+      font-size: 20px; } }
 .seventh .addmission {
   padding: 20px;
   background-color: #5c63b0;
@@ -160,8 +256,7 @@ header {
     font-size: 14px; }
 
 .team img {
-  width: 500px;
-  height: 300px; }
+  max-width: 100%; }
 .team .title {
   color: #4e018f; }
 .team .job {
@@ -171,15 +266,27 @@ header {
   text-align: center; }
   .team .job h1 {
     font-size: 65px; }
+    @media only screen and (max-width: 320px) {
+      .team .job h1 {
+        font-size: 40px; } }
+    @media only screen and (max-width: 576px) {
+      .team .job h1 {
+        font-size: 30px; } }
   .team .job h4 {
     font-size: 35px; }
   .team .job h2 {
-    font-size: 50px; }
+    font-size: 30px; }
 
 .feedback h2 {
   color: #4e018f; }
 .feedback .form-group input {
-  width: 400px; }
+  max-width: 65%; }
+  @media only screen and (max-width: 320px) {
+    .feedback .form-group input {
+      max-width: 100%; } }
+  @media only screen and (max-width: 576px) {
+    .feedback .form-group input {
+      max-width: 100%; } }
 .feedback .form-group .btn-main {
   color: #fff;
   background-color: #4e018f; }
@@ -202,6 +309,12 @@ header {
 
 .eighth h2 {
   color: #4e018f; }
+  @media only screen and (max-width: 320px) {
+    .eighth h2 {
+      font-size: 20px; } }
+  @media only screen and (max-width: 576px) {
+    .eighth h2 {
+      font-size: 20px; } }
 .eighth .semester {
   padding: 20px;
   background-color: #5c63b0;
@@ -215,9 +328,11 @@ header {
   background-color: #4e018f;
   padding: 20px;
   color: white; }
-  #myFooter .logo img {
-    max-width: 350px; }
-  #myFooter a {
-    color: #fff; }
+
+.logo img {
+  max-width: 100%; }
+
+a {
+  color: #fff; }
 
 /*# sourceMappingURL=style.css.map */

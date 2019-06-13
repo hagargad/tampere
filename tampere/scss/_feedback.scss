@@ -4,7 +4,13 @@
     }
     .form-group {
         input {
-            width: 400px;
+            max-width: 65%;
+            @include nanoSmall {
+                max-width: 100%;
+            }
+            @include extraSmall {
+                max-width: 100%;
+            }
         }
         .btn-main {
             color: $white_color;

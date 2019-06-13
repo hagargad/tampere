@@ -1,6 +1,12 @@
 .eighth {
     h2 {
         color: $main_color;
+        @include nanoSmall {
+            font-size: 20px;
+        }
+        @include extraSmall {
+            font-size: 20px;
+        }
     }
     .semester {
         padding: 20px;

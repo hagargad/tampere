@@ -1,20 +1,27 @@
 .sixth {
     h2 {
         color: $main_color;
+        @include nanoSmall {
+            font-size: 20px;
+        }
+        @include extraSmall {
+            font-size: 20px;
+        }
     }
-    .who {
-        padding: 20px;
-        background-color: #5c63b0;
+}
+
+.who {
+    padding: 20px;
+    background-color: #5c63b0;
+    color: $white_color;
+    p {
+        font-size: 14px;
         color: $white_color;
-        p {
+    }
+    ul {
+        li {
             font-size: 14px;
             color: $white_color;
-        }
-        ul {
-            li {
-                font-size: 14px;
-                color: $white_color;
-            }
         }
     }
 }

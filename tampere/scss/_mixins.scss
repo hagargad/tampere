@@ -17,7 +17,7 @@
 /* Medium devices (landscape tablets, 768px and up) */
 
 @mixin medium {
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 768px) {
         @content;
     }
 }
@@ -36,6 +36,12 @@
 
 @mixin extraLarge {
     @media only screen and(max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin abLarge {
+    @media only screen and(min-width: 1200px) {
         @content;
     }
 }
