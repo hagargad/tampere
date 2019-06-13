@@ -87,7 +87,10 @@ header {
   height: auto;
   margin: -20px 0 0 -20px;
   top: 50%;
-  left: 50%;
+  right: 100px;
+  left: 100px;
+  bottom: 50%;
+  justify-content: center;
   text-align: center; }
 
 .scrollup {
@@ -107,6 +110,20 @@ header {
     line-height: 33px; }
   .scrollup :hover {
     background: rgba(139, 164, 189, 0.6); }
+
+.v-divider {
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 1px;
+  height: 100%;
+  border-right: 2px solid #fff;
+  float: right; }
+  @media only screen and (max-width: 320px) {
+    .v-divider {
+      display: none; } }
+  @media only screen and (max-width: 576px) {
+    .v-divider {
+      display: none; } }
 
 .second-section img {
   max-width: 100%;
